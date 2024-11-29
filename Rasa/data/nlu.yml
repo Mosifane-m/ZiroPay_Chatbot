@@ -1,0 +1,252 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: account_information_question
+  examples: |
+    - What is my current account balance?
+    - What transactions occurred in my account last month?
+    - What is my available credit limit?
+    - What is my current credit score?
+    - What was my last payment amount?
+    - When is my next bill due?
+    - What are my recent transactions?
+    - What are the fees I've been charged this month?
+    - What is my current interest rate?
+    - What is my current rewards point balance?
+
+- intent: statement_history_questions
+  examples: |
+    -Can I see my last statement?
+    -What were my expenses last month?
+    -What did I spend at [specific store] recently?
+    -How much did I spend on groceries this month?
+    -What was my balance on [specific date]?
+    -Where can I find my tax statements?
+    -What were my utility payments last month?
+    -How much did I spend on subscriptions?
+    -What recurring payments do I have?
+
+- intent: financial_advice_questions
+  examples: |
+    - How can I start building an emergency fund?
+    - What's the best way to track my spending?
+    - How can I reduce my monthly expenses?
+    - What budgeting method would work best for me?
+    - How much of my income should I save?
+    - What's the best way to save for a large purchase?
+    - How can I stop living paycheck to paycheck?
+    - Should I keep my money in savings or checking?
+    - What's the best way to save for multiple goals?
+    - How can I build better spending habits?
+    - Which debts should I pay off first?
+    - Should I use the avalanche or snowball method?
+    - Is debt consolidation a good option for me?
+    - How can I get out of credit card debt?
+    - Should I take out a personal loan to pay off debt?
+    - How can I pay off my student loans faster?
+    - Should I refinance my mortgage?
+    - Is it better to pay off debt or invest?
+    - How can I improve my debt-to-income ratio?
+    - Should I use my savings to pay off debt?
+    - How should I start investing?
+    - What investment strategy is right for me?
+    - Should I invest in stocks or mutual fund?
+    - Is now a good time to invest in real estate?
+    - How should I diversify my portfolio?
+    - Should I invest in cryptocurrencies?
+    - What's the best way to invest for short-term goals?
+    - How aggressive should my investment strategy be?
+    - Should I use a robo-advisor or traditional advisor?
+    - How often should I rebalance my portfolio?
+    - How much should I save for retirement?
+    - Should I choose a Roth or Traditional IRA?
+    - How much should I contribute to my 401(k)?
+    - When should I start taking Social Security?
+    - Should I roll over my old 401(k)?
+    - What retirement accounts should I have?
+    - How can I catch up on retirement savings?
+    - Should I take my pension as a lump sum?
+    - What's the best way to generate retirement income?
+    - How can I make my retirement savings last longer?
+    - Should I take a job with lower pay but better benefits?
+    - How much should I ask for in salary negotiations?
+    - Should I start a side business?
+    - Is it worth going back to school?
+    - Should I switch to a higher-paying career?
+    - How can I increase my income?
+    - Should I take a contract or permanent position?
+    - How should I negotiate my benefits package?
+    - Should I relocate for a better-paying job?
+    - How can I prepare financially for a career change?
+    - Should I buy or rent a home?
+    - Is it the right time to buy a house?
+    - Should I lease or buy a car?
+    - How much house can I afford?
+    - Should I downsize my home?
+    - Is it worth renovating my home?
+    - Should I buy a new or used car?
+    - When is the right time to start a family?
+    - Should I move to a lower cost-of-living area?
+    - Should I sell my investment property?
+    - What type of life insurance should I get?
+    - How much insurance coverage do I need?
+    - Should I get long-term care insurance?
+    - What health insurance plan is best?
+    - Do I need disability insurance?
+    - Should I get rental insurance?
+    - Is an umbrella policy worth it?
+    - Should I increase my deductibles?
+    - What insurance policies do I really need?
+    - Should I bundle my insurance policies?
+    - How can I lower my tax bill?
+    - Should I itemize or take the standard deduction?
+    - What tax deductions should I claim?
+    - Should I adjust my tax withholding?
+    - How should I handle taxes for my side business?
+    - Should I make charitable donations for tax benefits?
+    - What's the best way to give money to family?
+    - Should I sell investments for tax loss harvesting?
+    - How can I reduce capital gains taxes?
+    - Should I hire a tax professional?
+    - Do I need a will or trust?
+    - How should I structure my estate plan?
+    - Should I set up a living trust?
+    - How can I minimize estate taxes?
+    - Should I give inheritance while I'm alive?
+    - How should I distribute my assets?
+    - Should I name a trust as beneficiary
+    - How can I protect assets for my children?
+    - Should I add someone to my bank accounts?
+    - How should I plan for long-term care?
+
+- intent: account_settings_question
+  examples: |
+    - What is my current contact information?
+    - What is my preferred communication method?
+    - What paperless settings do I have?
+    - What notifications am I subscribed to?
+    - What is my online banking username?
+    - What devices are registered to my account?
+    - What is my current mailing address?
+    - What language preference is set for my account?
+
+- intent: finance_question
+  examples: |
+    - What is the stock price for Apple?
+    - How do I invest in bonds?
+    - What are mutual funds?
+    - What is the difference between a checking and savings account?
+    - How do interest rates work in banking?
+    - What is the difference between a debit card and a credit card?
+    - What is the stock market and how does it work?
+    - What is compound interest?
+    - What is the difference between bull and bear markets?
+    - What are dividends?
+    - What factors affect a credit score?
+    - What is a credit report?
+    - What is the difference between fixed and variable interest rates?
+    - What is refinancing?
+    - What is a mortgage?
+    - What is collateral in lending?
+    - What is the difference between secured and unsecured loans?
+    - What is a pension?
+    - What is the difference between gross and net income?
+    - What are tax brackets?
+    - What is the difference between a tax deduction and a tax credit?
+    - What is capital gains tax?
+    - What is withholding tax?
+    - What is the standard deduction?
+    - What is inflation?
+    - What is deflation?
+    - What is GDP?
+    - What is a recession?
+    - What is the money supply?
+    - What is fiscal policy?
+    - What is monetary policy?
+    - What is foreign exchange (forex)?
+    - What is a trade deficit?
+    - What affects currency exchange rates?
+    - What is the World Bank?
+    - What is the IMF?
