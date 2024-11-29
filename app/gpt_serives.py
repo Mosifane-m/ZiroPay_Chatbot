@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 
-client = OpenAI(api_key="#")
+client = OpenAI()
 
 def generate_answer(prompt: str):
     try:
